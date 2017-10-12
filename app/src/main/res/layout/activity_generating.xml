@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="edu.wm.cs.cs301.amazebylinyongnan.ui.GeneratingActivity">
+
+
+    <include layout="@layout/content_generating" />
+
+    <ImageView
+        android:src="@drawable/matrix3"
+        android:layout_width="580dp"
+        android:layout_height="730dp"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginTop="-5dp"
+        android:id="@+id/matriximage" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        app:layout_anchorGravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:max="100"
+        android:layout_marginBottom="150dp"
+        android:progressDrawable="@color/green"/>
+
+    <Button
+        android:text=">>Back"
+        android:textAllCaps="false"
+        android:typeface="monospace"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/green"
+        android:textSize="21dp"
+        android:layout_width="120dp"
+        android:layout_height="63dp"
+        android:id="@+id/button3"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="130dp"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <TextView
+        android:text="Loading..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/textView3" />
+
+
+</android.support.design.widget.CoordinatorLayout>

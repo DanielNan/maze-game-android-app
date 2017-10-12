@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="edu.wm.cs.cs301.amazebylinyongnan.ui.ZeroBatteryFinishActivity">
+
+    <ImageView
+        android:src="@drawable/matrix2"
+        android:layout_width="680dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-140dp"
+        android:id="@+id/matriximage" />
+
+    <TextView
+        android:text=">> insufficient battery_"
+        android:typeface="monospace"
+        android:textColor="@color/green"
+        android:layout_width="310dp"
+        android:layout_height="119dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="170dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/textView5" />
+
+
+    <Button
+        android:text=">>Play again"
+        android:textAllCaps="false"
+        android:typeface="monospace"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/green"
+        android:textSize="19dp"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:id="@+id/button3"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="110dp"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <include layout="@layout/content_zero_battery_finish" />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

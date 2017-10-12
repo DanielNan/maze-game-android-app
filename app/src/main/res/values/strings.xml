@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AMazeByLinyongNan</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_amaze">AMazeActivity</string>
+    <string name="title_activity_generating">GeneratingActivity</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="title_activity_finish">FinishActivity</string>
+    <string name="title_activity_auto_play">AutoPlayActivity</string>
+    <string name="title_activity_zero_battery_finish">ZeroBatteryFinishActivity</string>
+</resources>

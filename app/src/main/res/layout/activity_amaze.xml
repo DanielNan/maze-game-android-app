@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context="edu.wm.cs.cs301.amazebylinyongnan.ui.AMazeActivity">
+
+    <ImageView
+        android:src="@drawable/matrix2"
+        android:layout_width="680dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-140dp"
+        android:id="@+id/matriximage" />
+
+    <Button
+        android:text=">>Reload"
+        android:textAllCaps="false"
+        android:typeface="monospace"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/green"
+        android:textSize="21dp"
+        android:layout_width="130dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="185dp"
+        android:id="@+id/button"
+        app:layout_anchorGravity="top|center_horizontal"
+        android:layout_gravity="bottom|center_horizontal" />
+
+    <Button
+        android:text=">>New Matrix"
+        android:textAllCaps="false"
+        android:typeface="monospace"
+        android:background="@drawable/buttonstyle"
+        android:textSize="21dp"
+        android:textColor="@color/green"
+        android:layout_width="170dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="185dp"
+        android:id="@+id/button2"
+        android:layout_gravity="bottom|center_horizontal" />
+
+    <Spinner
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:id="@+id/spinner2"
+        android:entries="@array/driver"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="220dp" />
+
+    <TextView
+        android:text="SeekBarNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:typeface="monospace"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textView2" />
+
+    <SeekBar
+        android:layout_width="293dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/seekBar"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:max="15"
+        android:text="choose a builder:"/>
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:id="@+id/spinner"
+        android:layout_marginTop="400dp"
+        android:entries="@array/builder"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:text="Welcome to the Matrix"
+        android:layout_width="276dp"
+        android:layout_height="119dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="120dp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:typeface="monospace"
+        android:textColor="@color/green"
+        android:id="@+id/textView" />
+    <TextView
+        android:text=">>Select a builder"
+        android:typeface="monospace"
+        android:textColor="@color/green"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text=">>Select a driver"
+        android:typeface="monospace"
+        android:textColor="@color/green"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="210dp"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <include layout="@layout/content_amaze" />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

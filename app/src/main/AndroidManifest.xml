@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wm.cs.cs301.amazebylinyongnan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.AMazeActivity"
+            android:label="AMazeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.GeneratingActivity"
+            android:label="@string/title_activity_generating"
+            android:parentActivityName=".ui.AMazeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AMazeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.ManualPlayActivity"
+            android:label="@string/title_activity_play"
+            android:parentActivityName=".ui.AMazeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AMazeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.WinFinishActivity"
+            android:label="@string/title_activity_finish"
+            android:parentActivityName=".ui.AMazeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AMazeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.AutoPlayActivity"
+            android:label="@string/title_activity_auto_play"
+            android:parentActivityName=".ui.GeneratingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.wm.cs.cs301.amazebylinyongnan.ui.GeneratingActivity" />
+        </activity>
+        <activity
+            android:name=".ui.ZeroBatteryFinishActivity"
+            android:label="@string/title_activity_zero_battery_finish"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>
